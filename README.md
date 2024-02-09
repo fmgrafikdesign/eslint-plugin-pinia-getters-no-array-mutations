@@ -64,13 +64,14 @@ This rule checks for and reports any usage of array methods that mutate the stor
 #### Invalid Code Examples
 
 The rule will flag any use of mutating array methods that are directly applied to `this`, `state`, or any nested
-properties within a Pinia getter function. Here are some examples that __will be flagged__ by the rule:
+properties within a Pinia getter function. These can modify your state in place and lead to infinite recursive behavior.
+Here are some examples that __will be flagged__ by the rule:
 
 ```javascript
 const store = {
   getters: {
-    // Using .sort() directly on this.someArray
-    sortedArray: (state) => this.someArray.sort(sortFn),
+    // Using .reverse() directly on this.someArray
+    reversedArray: (state) => this.someArray.reverse(),
 
     // Mutating a nested array on this
     sortedNestedArray: (state) => this.nested.someArray.sort(sortFn),
