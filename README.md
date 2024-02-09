@@ -76,7 +76,7 @@ const store = {
     // Mutating a nested array on this
     sortedNestedArray: (state) => this.nested.someArray.sort(sortFn),
 
-    // same idea for state
+    // Same idea for state
     sortedStateArray: (state) => state.someArray.sort(sortFn),
 
     // Mutating a nested array on state
