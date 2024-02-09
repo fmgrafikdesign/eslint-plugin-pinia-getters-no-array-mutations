@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-pinia-getters-no-array-mutations",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "eslint rule to disallow array methods that modify an array in-place in pinia getters because it can trigger endless recursions.",
   "main": "index.js",
   "scripts": {

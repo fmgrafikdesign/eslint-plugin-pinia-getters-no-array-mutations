@@ -193,6 +193,16 @@ Example:
   // ...
   ```
 
+## Demo
+
+The repo provides a demonstration of the rule.
+- Clone the repo
+- Navigate to the demo folder
+- Install via `npm install`
+- Lint via `npm run lint`
+- You will see multiple errors reported by the rule
+- More information can be found in `/demo/README.md`.
+
 ## Motivation
 
 After one too many hard-to-track reactivity issues, `maximum call stack size exceeded` errors and infinite recursion
