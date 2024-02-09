@@ -1,0 +1,1 @@
+module.exports = '{{method}} may not be called on `this` or `state` properties inside of pinia getters, as it modifies the array in-place and may lead to endless recursion in a reactive context. Consider creating a copy of the array or use a non-mutating alternative';
